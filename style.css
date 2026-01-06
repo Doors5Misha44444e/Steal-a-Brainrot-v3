@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+}
+
+#quiz-screen {
+    width: 550px;
+    padding: 30px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.quiz-intro {
+    margin-bottom: 15px;
+    color: #ffd6a5;
+}
+
+#question-text {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+#answers-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.answer-btn {
+    width: 45%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    transition: transform 0.2s;
+}
+
+.answer-btn:nth-child(1){background:#ff6a00;}
+.answer-btn:nth-child(2){background:#6a11cb;}
+.answer-btn:nth-child(3){background:#43cea2;}
+.answer-btn:nth-child(4){background:#f7971e;}
+
+.answer-btn:hover {
+    transform: scale(1.05);
+}
+
+
+.modal {
+    position: fixed;
+ 
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal-content {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 350px;
+    animation: floatIn 0.6s ease;
+}
+
+@keyframes floatIn {
+    from {opacity:0; transform: translateY(-30px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+.modal-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.modal-buttons button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+
+#start-btn {background:#43cea2;}
+#exit-btn {background:#ff416c;}
+#timer {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffd6a5;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    z-index: 20;
+}
+
