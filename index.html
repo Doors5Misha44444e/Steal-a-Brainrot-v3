@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Квіз Steal a Brainrot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="start-modal" class="modal">
+    <div class="modal-content">
+        <h2>Готовий до тесту?</h2>
+        <p>Квіз по грі [🎁] Steal a Brainrot</p>
+        <div class="modal-buttons">
+            <button id="start-btn">Почати тест</button>
+            <button id="exit-btn">Закінчити</button>
+        </div>
+    </div>
+</div>
+
+<div id="quiz-screen" style="display:none;">
+    <p class="quiz-intro">Перевір свої знання 🚀</p>
+
+    <p id="timer">⏱️ Час: 10</p>
+
+    <h2 id="question-text">Запитання</h2>
+    <div id="answers-container"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
